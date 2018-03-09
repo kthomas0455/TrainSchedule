@@ -1,0 +1,35 @@
+body {
+    background: url("https://www.overthinkingit.com/wp-content/uploads/2009/09/aaaaaaa.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+#header{
+   margin-left: 140px;
+}
+
+#topper{
+    padding-top: 5%;
+}
+
+.timeDisplay {
+    color: white;
+}
+
+#form{
+    opacity: .5;
+}
+
+#loader{
+    color: white;
+    font-size: 20px;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+    padding-top: 5%;
+
+    }
