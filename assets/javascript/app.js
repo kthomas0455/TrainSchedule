@@ -46,7 +46,7 @@ $(document).ready(function () {
           train.append(displayNext);
           train.append(Nexttrain);
 
-          $("#trains").append(train);
+          $("#trains").append(train)
         });
           $("#submit").click(newTrain);
     });
