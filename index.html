@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>TrainScheduler</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body class="main">
+    <div id="topper"></div>
+    <div class="container">
+       
+            <div>
+               <a id="header" href="https://fontmeme.com/harry-potter-font/"><img src="https://fontmeme.com/permalink/180308/73e6d74725892a05b53bef453c754cd3.png" alt="harry-potter-font" border="0"></a>
+            </div>
+
+        <div id="loader" class="container">
+            <div class="row ml-5 mr-5">
+                <table class="table table-hover z-depth-3 ">
+                    <thead class="timeDisplay">
+                        <tr>                        
+                            <th>Name Of Train</th>
+                            <th>Destination</th>
+                            <th>Frequency(minutes)</th>
+                            <th>Next Train</th>
+                            <th>Minutes Until Departure</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trains">
+                    </tbody>
+                </table>
+            </div>
+        </div>  
+
+        <div class="row ml-5 mr-5">
+            <div id="form" class="container">
+                <div class="card mb-5 ">
+                    <h4 id="card" class="card-header">Add Train</h4>
+                    <div class="card-body timeDisplayBody">
+                        <form>
+                            <div class="form-group">                                                       
+                                <label>Train Name</label>
+                                <input class="form-control" id="trainName">
+                            </div>
+                            <div class="form-group">
+                                <label>Destination</label>
+                                <input class="form-control" id="trainDestination">
+                            </div>
+                            <div class="form-group">
+                                <label>Next Departure Time (Military Clock)</label>
+                                <input class="form-control" id="FirstTrain">
+                            </div>
+                            <div class="form-group">
+                                <label>Frequency(minutes)</label>
+                                <input class="form-control" id="trainFrequency">
+                            </div>
+                                <button type="submit" class="btn btn-lg btn-dark" id="submit">Submit</button>                            
+                        </form>
+                    </div>    
+                </div>    
+            </div>    
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js" integrity="sha256-ABVkpwb9K9PxubvRrHMkk6wmWcIHUE9eBxNZLXYQ84k="
+        crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
